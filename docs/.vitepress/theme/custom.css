@@ -1,4 +1,11 @@
 /* 自定义折叠框的背景颜色与透明度 */
+/* 修改 VitePress 原生 details 容器背景色与透明度 */
+:root {
+  --vp-custom-block-details-bg: rgba(240, 255, 255, 0.3) !important;
+}
+
+/* 强制提升优先级，确保覆盖样式 */
+.vp-doc details.details,
 .vp-doc div[class*='custom-block'].details {
-  background-color: rgb(240 255 255 / 30%); /* 前面是 RGB 颜色，斜杠后直接写 40% 透明度 */
+  background-color: rgba(240, 255, 255, 0.3) !important;
 }
