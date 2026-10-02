@@ -1,0 +1,4 @@
+/* 自定义折叠框的背景颜色与透明度 */
+.vp-doc div[class*='custom-block'].details {
+  background-color: rgb(240 255 255 / 30%); /* 前面是 RGB 颜色，斜杠后直接写 40% 透明度 */
+}
