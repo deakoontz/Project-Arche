@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: "Project Arche",
-  description: "Project Arche 官方设定集与世界观资料库",
+  description: "Project Arche 官方设定集与资料库",
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
@@ -14,6 +14,15 @@ export default defineConfig({
         text: '📖 世界观',
         items: [
           { text: '背景设定', link: '/world' },
+          { 
+            text: '🏛️ 势力', 
+            link: '/world#势力',
+            items: [
+              { text: '捕梦者', link: '/world#捕梦者' },
+              { text: '代达罗斯工业', link: '/world#代达罗斯工业' },
+              { text: '教团', link: '/world#教团' }
+            ]
+          }
         ]
       },
       {
