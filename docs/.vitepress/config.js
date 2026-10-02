@@ -4,6 +4,11 @@ export default defineConfig({
   title: "Project Arche",
   description: "Project Arche 官方设定集与资料库",
   themeConfig: {
+    // 添加这一段配置右侧大纲
+  outline: {
+    level: [1, 3],       // 抓取 h1 到 h3 标题
+    label: '导航栏'     // 右侧导航栏的中文标题
+  },
     nav: [
       { text: '首页', link: '/' },
       { text: '世界观', link: '/world' },
